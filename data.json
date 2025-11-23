@@ -75,5 +75,47 @@
     "nome":"R",
     "descricao":"R é uma linguagem especializada em análise estatística e ciência de dados, amplamente usada para visualização de dados e pesquisa científica.",
     "link":"https://www.r-project.org/"
+},
+
+{
+    "nome":"Dart",
+    "descricao":"Dart é uma linguagem orientada a objetos desenvolvida pelo Google, utilizada principalmente para criar aplicações multiplataforma com Flutter para mobile, web e desktop.",
+    "link":"https://dart.dev/"
+},
+
+{
+    "nome":"Scala",
+    "descricao":"Scala é uma linguagem que combina programação orientada a objetos e funcional, rodando na JVM e oferecendo concisão, expressividade e tipo seguro.",
+    "link":"https://www.scala-lang.org/"
+},
+
+{
+    "nome":"Perl",
+    "descricao":"Perl é uma linguagem de script poderosa conhecida pela sua flexibilidade e processamento de texto, amplamente usada para automação e administração de sistemas.",
+    "link":"https://www.perl.org/"
+},
+
+{
+    "nome":"Elixir",
+    "descricao":"Elixir é uma linguagem funcional moderna que roda na Máquina Virtual Erlang, oferecendo concorrência, distribuição e tolerância a falhas para aplicações escaláveis.",
+    "link":"https://elixir-lang.org/"
+},
+
+{
+    "nome":"Haskell",
+    "descricao":"Haskell é uma linguagem de programação funcional pura, estaticamente tipada, ideal para aplicações que demandam alta confiabilidade e processamento simbólico.",
+    "link":"https://www.haskell.org/"
+},
+
+{
+    "nome":"Julia",
+    "descricao":"Julia é uma linguagem de alto desempenho para computação científica e numérica, combinando velocidade de linguagens compiladas com facilidade de uso de linguagens interpretadas.",
+    "link":"https://julialang.org/"
+},
+
+{
+    "nome":"Assembly",
+    "descricao":"Assembly é uma linguagem de baixo nível que representa instruções de máquina em forma legível, permitindo otimizações críticas e controle total sobre o hardware.",
+    "link":"https://www.tutorialspoint.com/assembly_programming/index.htm"
 }
 ]
