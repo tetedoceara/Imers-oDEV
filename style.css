@@ -1,0 +1,164 @@
+:root{
+	--bg: #0f1724; /* cor de fundo principal usada no tema */
+	--card: #0b1220; /* cor de fundo para cards */
+	--muted: #9aa4b2; /* cor para textos secundários/muted */
+	--accent: #7c3aed; /* cor de destaque principal (roxo) */
+	--accent-2: #06b6d4; /* cor de destaque secundária (ciano) */
+	--white: #f8fafc; /* tom claro usado para textos */
+	--radius: 12px; /* raio padrão de borda para contêineres */
+	--max-width: 1000px; /* largura máxima do conteúdo central */
+} 
+
+*{box-sizing:border-box;margin:0;padding:0} /* aplica box-sizing e remove espaçamento padrão */
+html,body{height:100%} /* garante que o html/body ocupem toda a altura */
+
+body{
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; /* pilha de fontes */
+	background: linear-gradient(180deg, #061021 0%, #071322 60%); /* gradiente de fundo suave */
+	color:var(--white); /* cor de texto padrão */
+	-webkit-font-smoothing:antialiased; /* suaviza fontes no Safari/Chrome */
+	-moz-osx-font-smoothing:grayscale; /* suaviza fontes no Firefox/Mac */
+	line-height:1.4; /* altura de linha padrão */
+	padding:32px 16px; /* espaçamento interno da página */
+} 
+
+.container{ /* contêiner centralizado opcional */
+	width:100%; /* largura total do contêiner */
+	max-width:var(--max-width); /* limita a largura máxima */
+	margin:0 auto; /* centraliza horizontalmente */
+}
+
+/* estilos para o cabeçalho superior */
+header{ /* seletor do header */
+	display:flex; /* layout flexível para alinhar título e busca */
+	align-items:center; /* centraliza verticalmente */
+	justify-content:space-between; /* separa título e controles */
+	gap:20px; /* espaço entre elementos do header */
+	margin-bottom:28px; /* distância em relação ao conteúdo abaixo */
+} 
+
+header h1{ /* título principal */
+	font-size:1.6rem; /* tamanho do texto do título */
+	letter-spacing:0.2px; /* leve espaçamento entre letras */
+	color:var(--white); /* cor do título */
+}
+
+header > div{ /* contêiner do input e botão */
+	display:flex; /* alinhar input e botão em linha */
+	gap:8px; /* espaço entre input e botão */
+	align-items:center; /* centraliza verticalmente */
+} 
+
+input[type="text"]{
+	width:360px; /* largura base do input */
+	max-width:60vw; /* largura máxima relativa à viewport */
+	padding:10px 12px; /* espaçamento interno do input */
+	border-radius:8px; /* borda arredondada do input */
+	border:1px solid rgba(255,255,255,0.06); /* borda sutil */
+	background: rgba(255,255,255,0.03); /* fundo semi-transparente */
+	color:var(--white); /* cor do texto dentro do input */
+	outline:none; /* remove outline padrão do navegador */
+	transition:box-sh adow .15s, border-color .15s; /* animação suave em foco */
+}
+
+input[type="text"]::placeholder{color:var(--muted)} /* cor do placeholder */
+
+input[type="text"]:focus{box-shadow:0 0 0 4px rgba(124,58,237,0.12);border-color:var(--accent)} /* estilo de foco acessível */
+
+button{ /* estilo do botão de busca */
+	background: linear-gradient(180deg,var(--accent), #5b21b6); /* gradiente de destaque */
+	color:var(--white); /* cor do texto do botão */
+	border:none; /* remove borda padrão */
+	padding:10px 14px; /* espaçamento interno do botão */
+	border-radius:8px; /* bordas arredondadas */
+	cursor:pointer; /* cursor de clique */
+	font-weight:600; /* texto um pouco mais pesado */
+	transition:transform .08s ease, box-shadow .08s ease; /* animação curta ao interagir */
+}
+
+button:active{transform:translateY(1px)} /* efeito de clique que move o botão 1px */
+
+main{flex:1;display:block;} /* garante que main expanda e empurre o footer para baixo */
+
+section{
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); /* leve brilho */
+	border:1px solid rgba(255,255,255,0.03); /* borda sutil ao redor da seção */
+	border-radius:var(--radius); /* cantos arredondados */
+	padding:24px; /* espaçamento interno */
+	min-height:320px; /* altura mínima para aparência consistente */
+}
+
+.hero{
+	display:flex; /* layout em linha */
+	gap:18px; /* espaço entre colunas da hero */
+	align-items:center; /* alinhamento vertical */
+	justify-content:space-between; /* espaçamento entre elementos */
+	flex-wrap:wrap; /* permite quebrar em telas pequenas */
+}
+
+.hero .left{max-width:640px;} /* largura máxima para a coluna da esquerda na hero */
+
+.title-lg{ /* classe para títulos grandes dentro da seção */
+	font-size:1.4rem; /* define tamanho maior */
+	margin-bottom:8px; /* separação abaixo do título */
+}
+
+.lead{color:var(--muted);} /* texto secundário com cor muted */
+
+
+.cards{ /* grid responsivo para cartões */
+	display:grid; /* usa grid layout */
+	grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); /* colunas fluidas e responsivas */
+	gap:16px; /* espaçamento entre cards */
+	margin-top:20px; /* espaço acima da grade */
+}
+
+.card{
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); /* leve destaque */
+	border-radius:10px; /* arredonda cantos dos cards */
+	padding:14px; /* espaçamento interno */
+	border:1px solid rgba(255,255,255,0.03); /* borda sutil */
+}
+
+.card h3{font-size:1rem;margin-bottom:6px} /* título do card: tamanho e espaçamento */
+.card p{color:var(--muted);font-size:0.9rem} /* parágrafo do card: cor e tamanho */
+
+footer{ /* contêiner do footer */
+	margin-top:28px; /* distância do conteúdo acima */
+	display:flex; /* usar flex para centralizar itens */
+	justify-content:center; /* centraliza horizontalmente */
+}
+
+footer ul{
+	display:flex; /* itens em linha */
+	gap:18px; /* espaço entre links */
+	list-style:none; /* remove marcadores de lista */
+}
+
+footer a{
+	color:var(--muted); /* cor inicial mais suave */
+	text-decoration:none; /* sem sublinhado */
+	border-bottom:1px dashed transparent; /* linha inferior para hover */
+}
+
+footer a:hover{color:var(--white);border-bottom-color:rgba(255,255,255,0.06)} /* hover: clareia o link e mostra a linha */
+
+/* Responsividade */ /* ajustes para telas menores */
+@media (max-width:720px){ /* ponto de quebra para mobile */
+	header{flex-direction:column;align-items:flex-start} /* empilha header no mobile */
+	input[type="text"]{width:100%;max-width:100%} /* input ocupa largura total */
+	header > div{width:100%;justify-content:stretch} /* contêiner do input e botão cresce */
+	button{width:120px} /* largura fixa menor para o botão no mobile */
+} /* fim media query */
+
+/* utilitários */ /* classes utilitárias simples */
+.muted{color:var(--muted)} /* aplica cor muted ao texto */
+.center{text-align:center} /* centraliza texto */
+
+/* foco acessível */
+:focus{outline: 3px solid rgba(3,105,161,0.12);outline-offset:2px} /* contorno visível para elementos focados */
+/* foco acessível */
+

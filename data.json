@@ -1,0 +1,79 @@
+[
+{
+    "nome":"JavaScript",
+    "descricao":"JavaScript é uma linguagem de programação versátil que adiciona interatividade a páginas web, permitindo funcionalidades dinâmicas como animações, validação de formulários e carregamento de conteúdo sem recarregar a página.",
+    "link":"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+},
+
+{
+    "nome":"Python",
+    "descricao":"Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida por sua sintaxe clara e legibilidade.",
+    "link":"https://www.python.org/"
+},
+
+{
+    "nome":"Java",
+    "descricao":"Java é uma linguagem de programação orientada a objetos, amplamente usada para desenvolver aplicações empresariais, móveis (Android) e sistemas de grande escala.",
+    "link":"https://www.oracle.com/java/"
+},
+
+{
+    "nome":"C++",
+    "descricao":"C++ é uma linguagem compilada que estende C com programação orientada a objetos, oferecendo alto desempenho e controle fino sobre recursos de hardware.",
+    "link":"https://cplusplus.com/"
+},
+
+{
+    "nome":"TypeScript",
+    "descricao":"TypeScript é um superconjunto de JavaScript que adiciona tipagem estática, permitindo detectar erros em tempo de desenvolvimento e melhorando a qualidade do código.",
+    "link":"https://www.typescriptlang.org/"
+},
+
+{
+    "nome":"C#",
+    "descricao":"C# é uma linguagem de programação moderna orientada a objetos, desenvolvida pela Microsoft, amplamente usada para desenvolvimento de aplicações Windows e jogos com Unity.",
+    "link":"https://learn.microsoft.com/pt-br/dotnet/csharp/"
+},
+
+{
+    "nome":"PHP",
+    "descricao":"PHP é uma linguagem de script server-side muito popular para desenvolvimento web, permitindo criar aplicações dinâmicas e interativas com banco de dados.",
+    "link":"https://www.php.net/"
+},
+
+{
+    "nome":"Go",
+    "descricao":"Go, também conhecida como Golang, é uma linguagem compilada desenvolvida pelo Google, focada em simplicidade, eficiência e concorrência para sistemas modernos.",
+    "link":"https://golang.org/"
+},
+
+{
+    "nome":"Rust",
+    "descricao":"Rust é uma linguagem de programação que oferece segurança de memória sem garbage collector, ideal para sistemas de baixo nível e aplicações de alta performance.",
+    "link":"https://www.rust-lang.org/"
+},
+
+{
+    "nome":"Ruby",
+    "descricao":"Ruby é uma linguagem dinâmica e orientada a objetos conhecida pela elegância de sua sintaxe e por ser a base do framework Ruby on Rails para desenvolvimento web.",
+    "link":"https://www.ruby-lang.org/"
+},
+
+{
+    "nome":"Swift",
+    "descricao":"Swift é a linguagem de programação moderna desenvolvida pela Apple para criar aplicações iOS, macOS, watchOS e tvOS com segurança e performance.",
+    "link":"https://developer.apple.com/swift/"
+},
+
+{
+    "nome":"Kotlin",
+    "descricao":"Kotlin é uma linguagem moderna que roda na JVM, totalmente interoperável com Java, e é a linguagem oficial recomendada para desenvolvimento Android.",
+    "link":"https://kotlinlang.org/"
+},
+
+{
+    "nome":"R",
+    "descricao":"R é uma linguagem especializada em análise estatística e ciência de dados, amplamente usada para visualização de dados e pesquisa científica.",
+    "link":"https://www.r-project.org/"
+}
+]
