@@ -2,8 +2,8 @@
 	--bg: #0f1724; /* cor de fundo principal usada no tema */
 	--card: #0b1220; /* cor de fundo para cards */
 	--muted: #9aa4b2; /* cor para textos secundários/muted */
-	--accent: #7c3aed; /* cor de destaque principal (roxo) */
-	--accent-2: #06b6d4; /* cor de destaque secundária (ciano) */
+	--accent: #ff2d95; /* cor de destaque principal (rosa K-pop) */
+	--accent-2: #00b7ff; /* cor de destaque secundária (ciano vibrante) */
 	--white: #f8fafc; /* tom claro usado para textos */
 	--radius: 12px; /* raio padrão de borda para contêineres */
 	--max-width: 1000px; /* largura máxima do conteúdo central */
@@ -39,6 +39,10 @@ header{ /* seletor do header */
 	gap:20px; /* espaço entre elementos do header */
 	margin-bottom:28px; /* distância em relação ao conteúdo abaixo */
 } 
+
+.brand{display:flex;align-items:center;gap:12px}
+.site-logo{width:48px;height:48px;object-fit:contain;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.35)}
+.search{display:flex;gap:8px;align-items:center}
 
 header h1{ /* título principal */
 	font-size:1.6rem; /* tamanho do texto do título */

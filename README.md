@@ -72,86 +72,74 @@ O projeto utiliza:
 
 #### Função Principal: `iniciarBusca()`
 ```
-1. Busca dados do arquivo data.json
-2. Obtém o valor do input de busca
-3. Filtra os dados por nome ou descrição
-4. Renderiza os resultados em cards
-5. Exibe informações sobre a busca
+- **HTML5**: Estrutura semântica
+
+# Base K-pop - Imersão DEV
+
+## 📋 Descrição
+
+Projeto educativo que funciona como uma **base de conhecimento interativa** sobre idols, grupos e empresas do universo K-pop. A aplicação permite buscar e explorar informações rápidas sobre artistas e agências.
+
+---
+
+## ✨ Funcionalidades
+
+- **🔍 Busca por artistas/empresas**: Procure por nome ou parte da descrição
+- **💾 Base de Dados JSON**: Lista de idols, grupos e empresas com descrição e link
+- **📱 Design Responsivo**: Interface adaptada para diferentes tamanhos de tela
+- **🎨 Tema K-pop**: Paleta mais vibrante (rosa e ciano) com tema escuro
+- **⚡ Carregamento automático**: A lista é carregada ao abrir a página
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```
+ImersãoDEV/
+├── index.html       # Estrutura HTML da página
+├── style.css        # Estilos e tema visual
+├── script.js        # Lógica de busca e renderização
+├── data.json        # Base de dados com idols, grupos e empresas
+└── README.md        # Este arquivo
 ```
 
-#### Função: `renderizarCards(dados)`
-- Limpa o container anterior
-- Cria cards dinâmicos com HTML para cada linguagem
-- Cada card contém: nome, descrição e link para saber mais
 
-#### Função: `mostrarInfoBusca(query, count)`
-- Exibe mensagem sobre quantidade de resultados
-- Se houver busca ativa: "Resultados para 'X' — Y encontrado(s)"
-- Se não houver busca: "Exibindo todas — Y item(ns)"
+### Conteúdo atual da Base de Dados
 
-#### Tratamento de Erros
-- Try/catch para capturar problemas no carregamento de dados
-- Mensagem amigável ao usuário se houver erro
+- **Grupos:** BTS, BLACKPINK, TWICE, SEVENTEEN, EXO, Red Velvet, NCT (e unidades como NCT 127/NCT Dream/WayV), Stray Kids, ATEEZ, Girls' Generation, BIGBANG, SHINee, GOT7, MAMAMOO, (G)I-DLE, ITZY, TXT, ENHYPEN, LOONA
+- **Solos:** IU, Taeyeon
+- **Empresas / Labels:** HYBE (BigHit), SM Entertainment, JYP Entertainment, YG Entertainment, Pledis Entertainment, Cube Entertainment, Starship Entertainment, Woollim Entertainment, FNC Entertainment, P NATION, DSP Media, Belift Lab, KQ Entertainment, Kakao Entertainment, Fantagio
+
+> Observação: a lista acima reflete os itens atualmente presentes em `data.json`.
 
 ---
 
 ## 🚀 Como Usar
 
-1. **Abrir a aplicação**
-   - Abra o arquivo `index.html` em um navegador web
-
-2. **Ver todas as linguagens**
-   - A página carrega automaticamente todas as 17 linguagens ao abrir
-
-3. **Buscar uma linguagem**
-   - Digite o nome de uma linguagem no campo de entrada
-   - Clique no botão "Buscar" ou pressione Enter
-   - Os resultados aparecem dinamicamente
-
-4. **Explorar detalhes**
-   - Clique no link "Saiba mais" para ir ao site oficial da linguagem
-
-### Exemplos de Buscas
-- `"Python"` → Encontra Python
-- `"web"` → Encontra JavaScript, PHP (contêm "web" na descrição)
-- `"JVM"` → Encontra Java, Kotlin, Scala (rodam na JVM)
-- `"orientada a objetos"` → Encontra várias linguagens OOP
+1. Abra o arquivo `index.html` em um navegador web
+2. A página carrega automaticamente a lista de itens
+3. Digite o nome de um idol, grupo ou empresa no campo de busca
+4. Clique em "Buscar K-pop" ou pressione Enter para filtrar os resultados
+5. Clique em "Saiba mais" em um card para visitar o link de referência
 
 ---
 
-## 🎨 Tema e Design
+## 🛠️ Detalhes Técnicos
 
-- **Paleta de Cores**: Tema dark-mode moderno e elegante
-- **Tipografia**: Usa fontes do sistema para melhor performance
-- **Espaçamento**: Padding e gaps consistentes para visual limpo
-- **Responsividade**: Input e elementos se adaptam a telas menores
-- **Animações**: Transições suaves no hover e focus dos elementos
+- `data.json`: cada item tem `nome`, `descricao` e `link` (pode ser estendido com `tipo`)
+- `script.js`: carrega `data.json`, filtra por `nome` e `descricao`, renderiza cards
+- `style.css`: variáveis de tema, responsividade e estilos para cards
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+## ✍️ Como Contribuir / Adicionar Itens
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Estilos avançados (flexbox, gradientes, variáveis)
-- **JavaScript (ES6+)**: 
-  - Fetch API para carregar dados JSON
-  - Array methods (filter)
-  - DOM manipulation
+- Para adicionar um novo artista/empresa, edite o arquivo `data.json` e acrescente um objeto com `nome`, `descricao` e `link`.
+- Opcional: inclua um campo `tipo` com os valores `"grupo"`, `"solo"` ou `"empresa"` para habilitar filtros por tipo (podemos implementar o filtro visual na interface se desejar).
 
 ---
 
-## 📊 Estrutura do data.json
-
-Cada linguagem no arquivo `data.json` contém:
-
-```json
-{
-    "nome": "Nome da Linguagem",
-    "descricao": "Descrição detalhada da linguagem",
-    "link": "URL do site oficial ou documentação"
-}
-```
-
+Versão: 1.0 — Atualizado para tema K-pop
 ---
 
 ## 👥 Autor
@@ -161,28 +149,4 @@ Cada linguagem no arquivo `data.json` contém:
 
 ---
 
-## 📝 Notas
-
-- O projeto foi desenvolvido como parte da **Imersão DEV**
-- A busca é **case-insensitive** (não diferencia maiúsculas/minúsculas)
-- A filtragem funciona em tempo real durante a digitação
-- O projeto é estático e não requer backend ou banco de dados externo
-
----
-
-## 🌟 Possíveis Melhorias Futuras
-
-- [ ] Adicionar paginação para melhor navegação
-- [ ] Implementar filtros por categorias (web, mobile, dados, etc)
-- [ ] Adicionar ratings ou favoritos
-- [ ] Criar página de detalhes expandida para cada linguagem
-- [ ] Implementar armazenamento local para linguagens favoritas
-- [ ] Adicionar modo claro (light theme)
-- [ ] Integrar com API de documentação
-- [ ] Criar versão mobile app com React Native ou Flutter
-
----
-
-**Versão**: 1.0  
-**Data**: Novembro de 2025  
-**Status**: Completo e funcional ✅
+Versão: 1.0 — Atualizado para tema K-pop

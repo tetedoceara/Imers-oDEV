@@ -55,6 +55,8 @@ function mostrarInfoBusca(query, count) {
     if (query) {
         info.textContent = `Resultados para "${query}" — ${count} encontrado(s).`;
     } else {
-        info.textContent = `Exibindo todas — ${count} item(ns).`;
+        info.textContent = `Exibindo todos — ${count} item(ns).`;
     }
 }
+
+window.addEventListener('DOMContentLoaded', iniciarBusca);
